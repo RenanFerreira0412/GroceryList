@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Compras</title>
+
+    <!-- Html2pdf (Gerar pdf) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- Estilos internos -->
+    <link rel="stylesheet" href="../style/index.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="main-container">
+        <div class="search-container">
+          <h3>Lista de Compras</h3>
+
+          <div class="search-container-input">
+            <input type="text" id="prodName" placeholder="Ex: Ovos" />
+            <button id="save">Salvar</button>
+          </div>
+        </div>
+
+        <div class="list-container"></div>
+
+        <div>
+          <button id="clean">Limpar Lista</button>
+          <button id="generate-pdf">Gerar PDF</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Arquivos JS-->
+    <script src="../models/product.js"></script>
+    <script type="module" src="../js/index.js"></script>
+  </body>
+</html>
